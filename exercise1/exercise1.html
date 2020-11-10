@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Exercise 1</title>
+	</head>
+	<body>
+		<label>Enter Password:</label>
+		<input id='pswd'></input></BR></BR>
+		<label>Confirm Password:</label>
+		<input id='cnfm'></input></BR></BR>
+		<button id ='val' onclick='validate()'>Validate</button>
+		<script>
+		function validate() {
+			box1 = document.getElementById('pswd');
+			box2 = document.getElementById('cnfm');
+			if (box1.value != box2.value) {
+				alert('Passwords must match.');
+			}
+			else if ((box1.value.length < 8) || (box2.value.length < 8)) {
+				alert('Passwords must be at least 8 characters long');
+			}
+		}
+		</script>
+	</body>
+</html>

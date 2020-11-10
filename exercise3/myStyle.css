@@ -1,0 +1,34 @@
+p
+{
+	color: white;
+	font-size: 16pt;
+}
+p.arial
+{
+	font-family: Arial Black, Gadget, sans-serif;
+	background-color: black;
+	border: 5px solid red;
+}
+body
+{
+	background-image: url('0001.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+img
+{
+	border: 5px solid black;
+	background-color: grey;
+}
+a
+{
+	font-size: 20pt;
+	font-family: Impact, Charcoal, sans-serif;
+	color: white;
+}
+a:hover
+{
+	color: red;
+	font-size: 26pt
+}

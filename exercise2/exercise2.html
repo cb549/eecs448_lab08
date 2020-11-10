@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>Exercise 2</title>
+	</head>
+	<body>
+		<img id='img' src='DSC_0395.JPG' height='300' width='500'>
+		<button id='prev' onclick='prevImage()'>Previous</button>
+		<button id='next' onclick='nextImage()'>Next</button>
+		<script>
+		let imgs = ['DSC_0395.JPG','DSC_0396.JPG','DSC_0397.JPG','DSC_0398.JPG','DSC_0399.JPG'];
+		let curImg = 0;
+		let htmlImg = document.getElementById('img');
+		function nextImage() {
+			switch (curImg) {
+				case 0:
+					htmlImg.src = imgs[1];
+					curImg = 1;
+					break;
+				case 1:
+					htmlImg.src = imgs[2];
+					curImg = 2;
+					break;
+				case 2:
+					htmlImg.src = imgs[3];
+					curImg = 3;
+					break;
+				case 3:
+					htmlImg.src = imgs[4];
+					curImg = 4;
+					break;
+				case 4:
+					htmlImg.src = imgs[0];
+					curImg = 0;
+					break;
+			}
+		}
+		function prevImage() {
+			switch (curImg) {
+				case 0:
+					htmlImg.src = imgs[4];
+					curImg = 4;
+					break;
+				case 1:
+					htmlImg.src = imgs[0];
+					curImg = 0;
+					break;
+				case 2:
+					htmlImg.src = imgs[1];
+					curImg = 1;
+					break;
+				case 3:
+					htmlImg.src = imgs[2];
+					curImg = 2;
+					break;
+				case 4:
+					htmlImg.src = imgs[3];
+					curImg = 3;
+					break;
+			}
+		}
+		</script>
+	</body>
+</html>

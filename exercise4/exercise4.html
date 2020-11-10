@@ -1,0 +1,30 @@
+<html>
+	<title>Exercise 4</title>
+	<head>
+	</head>
+	<body>
+		<p id='para' style='border: thick solid transparent'>Dummy paragraph text goes here.</p>
+		<label>Border (value from 0-255): </label></BR>
+		<label>Red value: </label><input id='borRed' type='number' value='255' min='0' max='255'></input>
+		<label>Green value: </label><input id='borGreen' type='number' value='255' min='0' max='255'></input>
+		<label>Blue value: </label><input id='borBlue' type='number' value='255' min='0' max='255'></input></BR>
+		<label>Background Color (value from 0-255): </label></BR>
+		<label>Red value: </label><input id='bckRed' type='number' value='255' min='0' max='255'></input>
+		<label>Green value: </label><input id='bckGreen' type='number' value='255' min='0' max='255'></input>
+		<label>Blue value: </label><input id='bckBlue' type='number' value='255' min='0' max='255'></input></BR>
+		<button onclick='eval()'>Okay</button>
+		<script>
+		function eval() {
+			let borRed = document.getElementById('borRed').value
+			let borGreen = document.getElementById('borGreen').value
+			let borBlue = document.getElementById('borBlue').value
+			let bckRed = document.getElementById('bckRed').value
+			let bckGreen = document.getElementById('bckGreen').value
+			let bckBlue = document.getElementById('bckBlue').value
+			let para = document.getElementById('para')
+			para.style.backgroundColor = 'rgb(' + borRed + ',' + borGreen + ',' + borBlue + ')'
+			para.style.borderColor = 'rgb(' + bckRed + ',' + bckGreen + ',' + bckBlue + ')'
+		}
+		</script>
+	</body>
+</html>
